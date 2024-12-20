@@ -4,7 +4,7 @@ services:
   api:
     container_name: currency-converter
     build: .
-    command: npm start
+    command: npm start # for development, use 'npm run dev' to use nodemon
     volumes:
       - .:/node-app
       - /node-app/node_modules
